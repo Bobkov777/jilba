@@ -1,0 +1,97 @@
+program Lab11;
+
+{$APPTYPE CONSOLE}
+
+uses Windows;
+ 
+const FILE_NAME = 'input.txt';
+
+//                                                      
+function CheckText(const fileName: string): Boolean;
+const
+  digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8','9'];
+  signs = ['+', '-', '*'];
+var F: TextFile;
+
+//                                   
+  function Check(var temp: Char): Boolean;
+  begin
+    if temp in digits then
+    begin
+      Read(F, temp);
+      while (temp in digits) do
+        Read(F, temp);
+      Result:=true;
+    end
+    else
+      if temp='(' then
+      begin
+        Result:=false;
+        Read(F, temp);
+        if Check(temp) then
+          if temp in signs then
+          begin
+            Read(F, temp);
+            if Check(temp) then
+              if temp = ')' then
+              begin
+                Read(F, temp);
+                Result:=true;
+              end;
+          end
+      end
+      else
+        Result:=false;
+  end;
+var temp: Char;
+begin
+  AssignFile(F, fileName);
+  Reset(F);
+  Read(F, temp);
+  Result:=False;
+  if Check(temp) and EOF(F) then
+  begin
+    Result:=True;
+  end;
+  CloseFile(F);
+end;
+
+begin
+  SetConsoleOutputCP(1251);
+  SetConsoleCP(1251);
+
+  if CheckText(FILE_NAME) then
+  begin
+    Writeln('Correct')
+  end
+  else
+  begin
+    Writeln('Incorrect');
+  end;
+    
+    if temp in digits then
+    begin
+      Read(F, temp);
+      while (temp in digits) do
+        Read(F, temp);
+      Result:=true;
+    end
+    else
+      if temp='(' then
+      begin
+        Result:=false;
+        Read(F, temp);
+        if temp in signs then
+        begin
+          Read(F, temp);
+          if Check(temp) then
+	      if temp = ')' then
+            begin
+               Read(F, temp);
+               Result:=true;
+            end;
+          end
+      end
+
+  Readln;
+end.

@@ -1,0 +1,23 @@
+﻿Построение начато 07.12.2015 22:53:08.
+     1>Проект "c:\Users\NotePad.by\documents\visual studio 2012\Projects\метрология_джилб\метрология_джилб\метрология_джилб.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         E:\Программы\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "метрология_джилб.cpp"
+         метрология_джилб.cpp
+     1>c:\users\notepad.by\documents\visual studio 2012\projects\метрология_джилб\метрология_джилб\метрология_джилб.cpp(30): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\программы\visual studio\vc\include\stdio.h(218): см. объявление "fopen"
+     1>c:\users\notepad.by\documents\visual studio 2012\projects\метрология_джилб\метрология_джилб\метрология_джилб.cpp(33): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\программы\visual studio\vc\include\stdio.h(237): см. объявление "fscanf"
+     1>c:\users\notepad.by\documents\visual studio 2012\projects\метрология_джилб\метрология_джилб\метрология_джилб.cpp(43): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\программы\visual studio\vc\include\stdio.h(218): см. объявление "fopen"
+     1>c:\users\notepad.by\documents\visual studio 2012\projects\метрология_джилб\метрология_джилб\метрология_джилб.cpp(79): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\программы\visual studio\vc\include\stdio.h(218): см. объявление "fopen"
+     1>c:\users\notepad.by\documents\visual studio 2012\projects\метрология_джилб\метрология_джилб\метрология_джилб.cpp(83): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\программы\visual studio\vc\include\stdio.h(237): см. объявление "fscanf"
+       Link:
+         E:\Программы\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\notepad.by\documents\visual studio 2012\Projects\метрология_джилб\Debug\метрология_джилб.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\notepad.by\documents\visual studio 2012\Projects\метрология_джилб\Debug\метрология_джилб.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\notepad.by\documents\visual studio 2012\Projects\метрология_джилб\Debug\метрология_джилб.lib" /MACHINE:X86 "Debug\метрология_джилб.obj"
+         метрология_джилб.vcxproj -> c:\users\notepad.by\documents\visual studio 2012\Projects\метрология_джилб\Debug\метрология_джилб.exe
+     1>Построение проекта "c:\Users\NotePad.by\documents\visual studio 2012\Projects\метрология_джилб\метрология_джилб\метрология_джилб.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.80
